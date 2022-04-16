@@ -19,4 +19,4 @@ Then to use a Ceylon Progress, just use element tag like any other HTML element:
 <ceylon-dots animation-type="bouncing"></ceylon-dots>
 ```
 
-> To learn more about Archivo Elements web components API, please read the [Official Documentation](https://ceylon.buddhilive.com/)
+> To learn more about Archivo Elements web components API, please read the [Official Documentation](https://buddhilive.github.io/ceylon-progress-website/)
