@@ -52,7 +52,7 @@
   display: flex;
   flex-direction: row;
   gap: 5px;
-  &__left{
+  &__left {
     position: relative;
     width: 10px;
     height: 10px;
@@ -68,7 +68,7 @@
       animation: dotstretchBefore 1s infinite linear;
     }
   }
-  &__right{
+  &__right {
     position: relative;
     width: 10px;
     height: 10px;
@@ -82,6 +82,102 @@
       background-color: $orange;
       color: $orange;
       animation: dotstretchAfter 1s infinite linear;
+    }
+  }
+}
+
+/* Dot Flashing */
+.dot-flashing {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  &__left {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $yellow;
+    color: $yellow;
+    animation: dotFlashing-yellow 1s infinite linear alternate;
+    animation-delay: 0.5s;
+    &:before {
+      @extend %dot-stretch-before-after;
+      left: -15px;
+      background-color: $maroon;
+      color: $maroon;
+      animation: dotFlashing-maroon 1s infinite alternate;
+      animation-delay: 0s;
+    }
+  }
+  &__right {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $green;
+    color: $green;
+    animation: dotFlashing-green 1s infinite linear alternate;
+    animation-delay: 1s;
+    &:after {
+      @extend %dot-stretch-before-after;
+      left: 15px;
+      background-color: $orange;
+      color: $orange;
+      animation: dotFlashing-orange 1s infinite alternate;
+      animation-delay: 1.5s;
+    }
+  }
+}
+
+/* Dot Bouncing */
+
+.dot-bouncing {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #eee;
+  box-shadow: 9984px 0 0 0 #eee, 9999px 0 0 0 #eee, 10014px 0 0 0 #eee;
+  animation: dotbouncing 1.5s infinite linear;
+}
+
+/* Dot Default */
+.dot-default {
+  display: flex;
+  flex-direction: row;
+  /* gap: 5px; */
+  &__left {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $yellow;
+    color: $yellow;
+    animation: dotDefault-left 3s infinite cubic-bezier(0.1, 0.3, 0.4, 1);
+    &:before {
+      @extend %dot-stretch-before-after;
+      left: -12px;
+      background-color: $maroon;
+      color: $maroon;
+      animation: dotDefaultBefore 3s infinite ease-in-out;
+    }
+  }
+  &__right {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $green;
+    color: $green;
+    animation: dotDefault-right 3s infinite cubic-bezier(0.1, 0.3, 0.4, 1);
+    &:after {
+      @extend %dot-stretch-before-after;
+      left: -24px;
+      background-color: $orange;
+      color: $orange;
+      animation: dotDefaultAfter 3s infinite cubic-bezier(0.1, 0.3, 0.4, 1);
     }
   }
 }

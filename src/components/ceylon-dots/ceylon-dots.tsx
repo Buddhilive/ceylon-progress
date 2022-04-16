@@ -7,10 +7,16 @@ import { Component, h, Prop } from '@stencil/core';
 })
 export class CeylonDots {
 
-  @Prop() animationType: string = 'pulse';
+  @Prop() animationType: string;;
 
   render() {
-    let classType = `dot-${this.animationType}`;
+    const availableClasses = [
+      'default', 'pulse', 'stretch', 'flashing', 'bouncing'
+    ];
+    let classType = 'dot-default';
+    if (this.animationType && availableClasses.includes(this.animationType)) {
+      classType = `dot-${this.animationType}`;
+    }
     return (
       <div class={classType}>
         <div class={`${classType}__left`}></div>
