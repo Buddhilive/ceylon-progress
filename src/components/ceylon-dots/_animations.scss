@@ -2,128 +2,258 @@
 
 @keyframes dotPulseBefore {
     0% {
-      box-shadow: 9984px 0 0 -5px $maroon;
+        box-shadow: 9984px 0 0 -5px $maroon;
     }
     30% {
-      box-shadow: 9984px 0 0 2px $maroon;
+        box-shadow: 9984px 0 0 2px $maroon;
     }
     60%,
     100% {
-      box-shadow: 9984px 0 0 -5px $maroon;
+        box-shadow: 9984px 0 0 -5px $maroon;
     }
-  }
-  
-  @keyframes dotPulse-left {
-    0% {
-      box-shadow: 9999px 0 0 -5px $yellow;
-    }
-    30% {
-      box-shadow: 9999px 0 0 2px $yellow;
-    }
-    60%,
-    100% {
-      box-shadow: 9999px 0 0 -5px $yellow;
-    }
-  }
+}
 
-  @keyframes dotPulse-right {
+@keyframes dotPulse-left {
     0% {
-      box-shadow: 10014px 0 0 -5px $green;
+        box-shadow: 9999px 0 0 -5px $yellow;
     }
     30% {
-      box-shadow: 10014px 0 0 2px $green;
+        box-shadow: 9999px 0 0 2px $yellow;
     }
     60%,
     100% {
-      box-shadow: 10014px 0 0 -5px $green;
+        box-shadow: 9999px 0 0 -5px $yellow;
     }
-  }
-  
-  @keyframes dotPulseAfter {
+}
+
+@keyframes dotPulse-right {
     0% {
-      box-shadow: 10029px 0 0 -5px $orange;
+        box-shadow: 10014px 0 0 -5px $green;
     }
     30% {
-      box-shadow: 10029px 0 0 2px $orange;
+        box-shadow: 10014px 0 0 2px $green;
     }
     60%,
     100% {
-      box-shadow: 10029px 0 0 -5px $orange;
+        box-shadow: 10014px 0 0 -5px $green;
     }
-  }
+}
+
+@keyframes dotPulseAfter {
+    0% {
+        box-shadow: 10029px 0 0 -5px $orange;
+    }
+    30% {
+        box-shadow: 10029px 0 0 2px $orange;
+    }
+    60%,
+    100% {
+        box-shadow: 10029px 0 0 -5px $orange;
+    }
+}
 
 /*   Dot Pulse Animation Ends */
 
 /* Dot Stretch Animation */
 @keyframes dotstretchBefore {
     0% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
     25% {
-      transform: scale(1, 1.5);
+        transform: scale(1, 1.5);
     }
     50% {
-      transform: scale(1, 0.67);
+        transform: scale(1, 0.67);
     }
     75% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  }
-  
-  @keyframes dotstretch-left {
-    0% {
-      transform: scale(1, 1);
-    }
-    25% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1, 1.5);
-    }
-    75% {
-      transform: scale(1, 1);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
+}
 
-  @keyframes dotstretch-right {
+@keyframes dotstretch-left {
     0% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
     25% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
     50% {
-      transform: scale(1, 0.67);
+        transform: scale(1, 1.5);
     }
     75% {
-      transform: scale(1, 1.5);
+        transform: scale(1, 1);
     }
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes dotstretch-right {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes dotstretchAfter {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    75% {
+        transform: scale(1, 0.67);
+    }
+    100% {
+        transform: scale(1, 1.5);
+    }
+}
+/* Dot stretch Animation Ends */
+
+/* Dot Flashing Animation */
+@keyframes dotFlashing-maroon {
+    0% {
+        background-color: $maroon;
+    }
+    50%,
+    100% {
+        background-color: #eee;
+    }
+}
+
+@keyframes dotFlashing-yellow {
+    0% {
+        background-color: $yellow;
+    }
+    50%,
+    100% {
+        background-color: #eee;
+    }
+}
+
+@keyframes dotFlashing-green {
+    0% {
+        background-color: $green;
+    }
+    50%,
+    100% {
+        background-color: #eee;
+    }
+}
+
+@keyframes dotFlashing-orange {
+    0% {
+        background-color: $orange;
+    }
+    50%,
+    100% {
+        background-color: #eee;
+    }
+}
+/* Dot Flashing Animation Ends */
+
+/* Dot Bouncing Animation */
+@keyframes dotbouncing {
+    0% {
+        box-shadow: 9984px 0 0 0 $maroon, 9999px 0 0 0 $yellow, 10014px 0 0 0 $green, 10029px 0 0 0 $orange;
+    }
+    10% {
+        box-shadow: 9984px -10px 0 0 $maroon, 9999px 0 0 0 $yellow, 10014px 0 0 0 $green, 10029px 0 0 0 $orange;
+    }
+    25% {
+        box-shadow: 9984px 0 0 0 $maroon, 9999px 0 0 0 $yellow, 10014px 0 0 0 $green, 10029px 0 0 0 $orange;
+    }
+    35% {
+        box-shadow: 9984px 0 0 0 $maroon, 9999px -10px 0 0 $yellow, 10014px 0 0 0 $green, 10029px 0 0 0 $orange;
+    }
+    50% {
+        box-shadow: 9984px 0 0 0 $maroon, 9999px 0 0 0 $yellow, 10014px 0 0 0 $green, 10029px 0 0 0 $orange;
+    }
+    65% {
+        box-shadow: 9984px 0 0 0 $maroon, 9999px 0 0 0 $yellow, 10014px -10px 0 0 $green, 10029px 0 0 0 $orange;
+    }
+    75% {
+        box-shadow: 9984px 0 0 0 $maroon, 9999px 0 0 0 $yellow, 10014px 0 0 0 $green, 10029px 0 0 0 $orange;
+    }
+    85% {
+        box-shadow: 9984px 0 0 0 $maroon, 9999px 0 0 0 $yellow, 10014px 0 0 0 $green, 10029px -10px 0 0 $orange;
+    }
+    100% {
+        box-shadow: 9984px 0 0 0 $maroon, 9999px 0 0 0 $yellow, 10014px 0 0 0 $green, 10029px 0 0 0 $orange;
+    }
+}
+/* Dot Bouncing Animation Ends */
+
+/* Dot Default Animation */
+@keyframes dotDefault-left {
+    0% {
+      left: calc(-50% - 5px);
+    }
+    75% {
+      left: calc(50% - 50px);
+    }
+    100% {
+      left: calc(100% - 50px);
     }
   }
   
-  @keyframes dotstretchAfter {
+  @keyframes dotDefault-right {
     0% {
-      transform: scale(1, 1);
-    }
-    25% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1, 1);
+      left: calc(-50% - 10px);
     }
     75% {
-      transform: scale(1, 0.67);
+      left: calc(50% - 45px);
     }
     100% {
-      transform: scale(1, 1.5);
+      left: calc(100% - 45px);
     }
   }
-/* Dot stretch Animation Ends */
+  
+  @keyframes dotDefaultBefore {
+    0% {
+      left: -50px;
+    }
+    50% {
+      left: -12px;
+    }
+    75% {
+      left: -15px;
+    }
+    100% {
+      left: -15px;
+    }
+  }
+  
+  @keyframes dotDefaultAfter {
+    0% {
+      left: 50px;
+    }
+    50% {
+      left: 12px;
+    }
+    75% {
+      left: 15px;
+    }
+    100% {
+      left: 15px;
+    }
+  }
+/* Dot Default Animation Ends */

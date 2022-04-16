@@ -1,6 +1,6 @@
 {
   "name": "ceylon-progress",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Open source CSS loading animations",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -23,7 +23,8 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "publish": "npm publish --access=public"
   },
   "dependencies": {
     "@stencil/core": "^2.13.0",
@@ -35,5 +36,6 @@
     "jest-cli": "^27.4.5",
     "puppeteer": "^10.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": ["progress bar", "loading animation", "progress indicator"]
 }
