@@ -1,0 +1,129 @@
+/* Dot Pulse Animation */
+
+@keyframes dotPulseBefore {
+    0% {
+      box-shadow: 9984px 0 0 -5px $maroon;
+    }
+    30% {
+      box-shadow: 9984px 0 0 2px $maroon;
+    }
+    60%,
+    100% {
+      box-shadow: 9984px 0 0 -5px $maroon;
+    }
+  }
+  
+  @keyframes dotPulse-left {
+    0% {
+      box-shadow: 9999px 0 0 -5px $yellow;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px $yellow;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -5px $yellow;
+    }
+  }
+
+  @keyframes dotPulse-right {
+    0% {
+      box-shadow: 10014px 0 0 -5px $green;
+    }
+    30% {
+      box-shadow: 10014px 0 0 2px $green;
+    }
+    60%,
+    100% {
+      box-shadow: 10014px 0 0 -5px $green;
+    }
+  }
+  
+  @keyframes dotPulseAfter {
+    0% {
+      box-shadow: 10029px 0 0 -5px $orange;
+    }
+    30% {
+      box-shadow: 10029px 0 0 2px $orange;
+    }
+    60%,
+    100% {
+      box-shadow: 10029px 0 0 -5px $orange;
+    }
+  }
+
+/*   Dot Pulse Animation Ends */
+
+/* Dot Stretch Animation */
+@keyframes dotstretchBefore {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1.5);
+    }
+    50% {
+      transform: scale(1, 0.67);
+    }
+    75% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes dotstretch-left {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1, 1.5);
+    }
+    75% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  @keyframes dotstretch-right {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1, 0.67);
+    }
+    75% {
+      transform: scale(1, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes dotstretchAfter {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    75% {
+      transform: scale(1, 0.67);
+    }
+    100% {
+      transform: scale(1, 1.5);
+    }
+  }
+/* Dot stretch Animation Ends */

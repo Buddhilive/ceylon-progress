@@ -1,0 +1,87 @@
+@import "./variables";
+@import "./animations";
+@import "./extends";
+/* Dot Pulse */
+.dot-pulse {
+  display: flex;
+  flex-direction: row;
+  &__left {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $yellow;
+    color: $yellow;
+    box-shadow: 9999px 0 0 -5px $yellow;
+    animation: dotPulse-left 1.5s infinite linear;
+    animation-delay: 0.25s;
+    &:before {
+      @extend %dot-pulse-before-after;
+      background-color: $maroon;
+      color: $maroon;
+      box-shadow: 9984px 0 0 -5px $maroon;
+      animation: dotPulseBefore 1.5s infinite linear;
+      animation-delay: 0s;
+    }
+  }
+  &__right {
+    position: relative;
+    left: -10009px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $green;
+    color: $green;
+    box-shadow: 9999px 0 0 -5px $green;
+    animation: dotPulse-right 1.5s infinite linear;
+    animation-delay: 0.5s;
+    &:after {
+      @extend %dot-pulse-before-after;
+      background-color: $orange;
+      color: $orange;
+      box-shadow: 10014px 0 0 -5px $orange;
+      animation: dotPulseAfter 1.5s infinite linear;
+      animation-delay: 0.5s;
+    }
+  }
+}
+
+/* Dot stretch */
+.dot-stretch {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  &__left{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $yellow;
+    color: $yellow;
+    animation: dotstretch-left 1s infinite linear;
+    &:before {
+      @extend %dot-stretch-before-after;
+      left: -15px;
+      background-color: $maroon;
+      color: $maroon;
+      animation: dotstretchBefore 1s infinite linear;
+    }
+  }
+  &__right{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $green;
+    color: $green;
+    animation: dotstretch-right 1s infinite linear;
+    &:after {
+      @extend %dot-stretch-before-after;
+      left: 15px;
+      background-color: $orange;
+      color: $orange;
+      animation: dotstretchAfter 1s infinite linear;
+    }
+  }
+}
