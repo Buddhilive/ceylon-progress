@@ -1,6 +1,6 @@
 {
   "name": "ceylon-progress",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Open source CSS loading animations",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
